@@ -31,17 +31,17 @@
     WeatherComponent.ɵcmp = i0.ɵɵdefineComponent({ type: WeatherComponent, selectors: [["lib-weather"]], decls: 2, vars: 0, template: function WeatherComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "p");
-                i0.ɵɵtext(1, " weather works! ");
+                i0.ɵɵtext(1, "weather works!");
                 i0.ɵɵelementEnd();
             }
-        }, encapsulation: 2 });
+        }, styles: [""] });
     /*@__PURE__*/ (function () {
         i0.ɵsetClassMetadata(WeatherComponent, [{
                 type: i0.Component,
                 args: [{
                         selector: 'lib-weather',
-                        template: "\n    <p>\n      weather works!\n    </p>\n  ",
-                        styles: []
+                        templateUrl: './weather.component.html',
+                        styleUrls: ['./weather.component.css']
                     }]
             }], function () { return []; }, null);
     })();
