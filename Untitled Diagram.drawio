@@ -1,11 +1,29 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="RaZN6btFNOcmfo6LRZtj">
-    <mxGraphModel dx="1013" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="774" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NG9N9KS3YvPwX7sb8C-h-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="220" y="230" as="geometry" />
+        <mxCell id="NG9N9KS3YvPwX7sb8C-h-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Inference Service (GPU node)&lt;/font&gt;&lt;div&gt;code completion &amp;amp; chat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="360" x="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="X3gNwNGdug_4-xN7Soje-5" edge="1" parent="1" source="X3gNwNGdug_4-xN7Soje-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="X3gNwNGdug_4-xN7Soje-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X3gNwNGdug_4-xN7Soje-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Gateway Service&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;(CPU nodes)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Route IDE requests, TLS termination&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="160" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="X3gNwNGdug_4-xN7Soje-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Data plane&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;(CPU nodes)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Analytics &amp;amp; logs — no code stored, IDs masked&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="160" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="X3gNwNGdug_4-xN7Soje-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Redis&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;(CPU nodes)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Session / Cache&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="360" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="X3gNwNGdug_4-xN7Soje-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Control plane&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;(CPU nodes)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;Identity, user mgmt, config, update svc&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="360" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="X3gNwNGdug_4-xN7Soje-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;CSI Secret Store Driver&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;mounts KV secrets as PODs volume&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="360" x="160" y="480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
